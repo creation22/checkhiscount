@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 
 // Real user images from public folder
 const users = [
@@ -390,6 +391,7 @@ function App() {
           Want to check secretly?
         </a>
       </footer>
+      <Analytics />
     </div>
   )
 }
