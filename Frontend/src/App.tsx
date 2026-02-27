@@ -244,7 +244,7 @@ function App() {
   const row2 = [...users.slice(2), ...users.slice(0, 2), ...users, ...users]
 
   return (
-    <div className="h-screen flex flex-col items-center overflow-hidden bg-[#f5f0e8]">
+    <div className="min-h-[100dvh] flex flex-col items-center bg-[#f5f0e8] overflow-x-hidden">
 
       {/* ========== TITLE ========== */}
       <h1
@@ -333,7 +333,7 @@ function App() {
       </div>
 
       {/* ========== TICKER ROW 1 ========== */}
-      <div className="w-full overflow-hidden mb-2">
+      <div className="w-full overflow-hidden mb-4 shrink-0">
         <div className="flex items-center" style={{ width: 'max-content', animation: 'scroll-left 35s linear infinite' }}>
           {[...row1, ...row1].map((user, i) => (
             <div
@@ -357,7 +357,7 @@ function App() {
       </div>
 
       {/* ========== TICKER ROW 2 ========== */}
-      <div className="w-full overflow-hidden">
+      <div className="w-full overflow-hidden shrink-0">
         <div className="flex items-center" style={{ width: 'max-content', animation: 'scroll-right 35s linear infinite' }}>
           {[...row2, ...row2].map((user, i) => (
             <div
@@ -381,7 +381,7 @@ function App() {
       </div>
 
       {/* ========== BOTTOM LINK ========== */}
-      <footer className="mt-auto pb-20">
+      <footer className="mt-auto pt-8 pb-10 shrink-0">
         <a
           href="#"
           id="secret-check-link"
