@@ -178,8 +178,8 @@ function LoaderPage({ onComplete }: { onComplete: () => void }) {
             <p
               key={i}
               className={`text-[14px] transition-all duration-300 ${isDone ? 'text-black font-bold' :
-                  isActive ? 'text-black font-bold' :
-                    isPending ? 'text-[#ccc]' : ''
+                isActive ? 'text-black font-bold' :
+                  isPending ? 'text-[#ccc]' : ''
                 }`}
               style={{ fontFamily: "'DM Mono', monospace" }}
             >
@@ -247,7 +247,7 @@ function App() {
 
       {/* ========== TITLE ========== */}
       <h1
-        className="font-display text-5xl sm:text-7xl md:text-8xl text-foreground tracking-wide text-center mb-6 mt-14 md:mt-20"
+        className="font-display text-5xl sm:text-7xl md:text-8xl text-foreground tracking-tight text-center mb-6 mt-14 md:mt-20"
         style={{
           fontFamily: "'Roboto', sans-serif",
           fontWeight: 900,
